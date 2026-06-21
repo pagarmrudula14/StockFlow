@@ -1,0 +1,349 @@
+/* =========================
+   GLOBAL HERO SECTION
+========================= */
+
+.signup-hero {
+  padding: 80px 0 60px;
+}
+
+.signup-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #424242;
+  line-height: 1.3;
+}
+
+.signup-hero p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 12px;
+}
+
+/* Hero image */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   SIGNUP FORM
+========================= */
+
+.signup-form {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.signup-form p.text-muted.small {
+  font-size: 14px;
+}
+.signup-form h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   INPUT GROUP (PHONE)
+========================= */
+
+.phone-input {
+  width: 100%;
+  max-width: 320px;
+  align-self: flex-start;
+}
+
+.phone-input .input-group-text {
+  height: 46px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #fff;
+  border-right: 0;
+  border-color: #ccc;
+}
+
+.phone-input .form-control {
+  height: 46px;
+  font-size: 15px;
+  border-left: 0;
+  border-color: #ccc;
+}
+
+.phone-input .form-control:focus {
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.phone-input .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.phone-input .is-invalid-group .input-group-text {
+  border-color: #dc3545;
+}
+
+/* =========================
+   BUTTON (OTP BUTTON)
+========================= */
+
+.signup-form button {
+  align-self: flex-start;
+  width: auto;
+  min-width: 160px;
+  padding: 0 40px;
+  height: 46px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #387ed1;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+.signup-form button:hover {
+  background-color: #2d6cb7;
+}
+
+.signup-form button:disabled {
+  background-color: #b8d1ea;
+  cursor: not-allowed;
+}
+
+/* =========================
+   INVESTMENT SECTION
+========================= */
+
+.investment-section {
+  padding: 60px 0;
+}
+
+.investment-card {
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.investment-card:hover {
+  transform: translateY(-5px);
+}
+
+.investment-card img {
+  height: 80px;
+}
+
+.investment-card h4 {
+  margin-top: 20px;
+  color: #424242;
+}
+
+.investment-card p {
+  color: #666;
+}
+
+/* =========================
+   BENEFITS SECTION
+========================= */
+
+.benefits-section {
+  padding: 60px 0;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 25px;
+}
+
+.benefit-card h4 {
+  color: #424242;
+  margin-top: 15px;
+}
+
+.benefit-card p {
+  color: #666;
+}
+
+/* =========================
+   STEPS SECTION
+========================= */
+
+.steps-section {
+  padding: 60px 0;
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #387ed1;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  color: #424242;
+}
+
+/* =========================
+   CHARGES SECTION
+========================= */
+
+.charges-section {
+  padding: 60px 0;
+}
+
+.charge-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.charge-card h3 {
+  color: #387ed1;
+  font-size: 1.8rem;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section {
+  padding: 60px 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 18px 0;
+}
+
+.faq-item h5 {
+  color: #424242;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.signup-footer {
+  background: #fafafa;
+  padding: 50px 0;
+}
+
+.signup-footer h5 {
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+.signup-footer p,
+.signup-footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  color: #387ed1;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 992px) {
+  .signup-form button {
+    padding-left:0;
+    margin-top:40px;
+    text-align:center;
+    align-self: center;
+  }
+}
+
+
+  .signup-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+
+@media (max-width: 768px) {
+  .signup-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .investment-card,
+  .benefit-card,
+  .charge-card {
+    margin-bottom: 25px;
+  }
+}
+/* ===================== FAQ SECTION ===================== */
+
+.accordion {
+  border: none;
+}
+
+/* Each FAQ item */
+.accordion-item {
+  border: 1px solid #eee !important;
+  border-radius: 10px !important;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.accordion-item:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Button styling */
+.accordion-button {
+  background-color: #fff !important;
+  color: #424242 !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 18px 20px;
+  box-shadow: none !important;
+}
+
+/* Remove Bootstrap blue focus */
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: #eee !important;
+}
+
+/* Remove default arrow background */
+.accordion-button::after {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+/* Open state */
+.accordion-button:not(.collapsed) {
+  background-color: #f8fbff !important;
+  color: #387ed1 !important;
+}
+
+/* Body styling */
+.accordion-body {
+  font-size: 15px;
+  color: #666;
+  padding: 15px 20px 20px 20px;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Section title */
+.faq-section h2 {
+  font-weight: 700;
+  color: #424242;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
