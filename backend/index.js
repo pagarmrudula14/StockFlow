@@ -18,6 +18,15 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+//RENDER
+app.get("/", (req, res) => {
+  res.send("StockFlow Backend Running 🚀");
+});
+
+app.get("/test", (req, res) => {
+  res.send("Test route working");
+});
+
 
 app.get("/addHoldings", async (req, res) => {
    let tempHoldings = [
