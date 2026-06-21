@@ -6,9 +6,11 @@
   "author": "mrudula",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+},
+
   "dependencies": {
     "body-parser": "^1.20.5",
     "cors": "^2.8.6",
