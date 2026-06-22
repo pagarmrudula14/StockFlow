@@ -10,14 +10,16 @@ const Positions = () => {
      .then((res) => {
   console.log("POSITIONS DATA:", res.data);
   console.log("IS ARRAY:", Array.isArray(res.data));
-  setPositions(res.data);
+setPositions(Array.isArray(res.data) ? res.data : []);
 })
       .catch((err) => console.log(err));
   }, []);
 
   return (
     <>
-      <h3 className="title">Positions ({positions.length})</h3>
+     <h3 className="title">
+  Positions ({Array.isArray(positions) ? positions.length : 0})
+</h3>
 
       <div className="order-table">
         <table>
@@ -37,7 +39,9 @@ const Positions = () => {
 
           {/* BODY */}
           <tbody>
-            {positions.map((stock) => {
+           
+           {Array.isArray(positions) &&
+  positions.map((stock) => {
               const curValue = stock.price * stock.qty;
               const pnl = curValue - stock.avg * stock.qty;
               const isProfit = pnl >= 0;
