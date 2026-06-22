@@ -1,6 +1,6 @@
 # StockFlow
 
-# 🚀 StockFlow — Production-Ready Full Stack Trading Platform
+# 🚀 StockFlow — Cloud based Full Stack Trading Platform
 
 A modern stock trading platform inspired by Zerodha Kite, engineered using the MERN Stack and deployed across multiple cloud platforms.
 
