@@ -21,6 +21,10 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  animation: {
+    duration: 1200,
+    easing: "easeOutQuart",
+  },
   plugins: {
     legend: {
       position: "top",
