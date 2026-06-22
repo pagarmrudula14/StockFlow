@@ -7,9 +7,11 @@ const Positions = () => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API}/allPositions`)
-      .then((res) => {
-        setPositions(res.data);
-      })
+     .then((res) => {
+  console.log("POSITIONS DATA:", res.data);
+  console.log("IS ARRAY:", Array.isArray(res.data));
+  setPositions(res.data);
+})
       .catch((err) => console.log(err));
   }, []);
 

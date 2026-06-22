@@ -7,9 +7,11 @@ const Orders = () => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API}/allOrders`)
-      .then((res) => {
-        setOrders(res.data);
-      })
+     .then((res) => {
+  console.log("ORDERS DATA:", res.data);
+  console.log("IS ARRAY:", Array.isArray(res.data));
+  setOrders(res.data);
+})
       .catch((err) => console.log(err));
   }, []);
 
