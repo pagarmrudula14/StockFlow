@@ -7,8 +7,11 @@ const Holdings = () => {
 
   useEffect(() => {
    axios.get(`${process.env.REACT_APP_API}/allHoldings`).then((res) => {
-      setAllHoldings(res.data);
-    });
+  console.log("HOLDINGS:", res.data);
+  console.log("IS ARRAY:", Array.isArray(res.data));
+
+  setAllHoldings(Array.isArray(res.data) ? res.data : []);
+});
   }, []);
 
   const labels = allHoldings.map((stock) => stock.name);
