@@ -5,7 +5,7 @@ import "./index.css";
 
 import Home from "./components/Home";
 import SignupPage from "./components/SignupPage";
-import Dashboard from "./components/Dashboard";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
