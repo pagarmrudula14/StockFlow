@@ -14,6 +14,7 @@ import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import Notfound from './landing_page/Notfound';
 
+
 import OnlineAccountOpening from "./landing_page/support/articles/OnlineAccountOpening";
 import LoginCredentials from "./landing_page/support/articles/LoginCredentials";
 import TradingFAQs from "./landing_page/support/articles/TradingFAQs";
@@ -31,7 +32,7 @@ root.render(
     <Route path="/pricing" element={<PricingPage />} />
     <Route path="/support" element={<SupportPage />} />
     <Route path="*" element={<Notfound />} />
-
+   
 
    <Route
   path="/support/online-account-opening"
