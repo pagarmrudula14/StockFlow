@@ -33,7 +33,7 @@ function Hero() {
     if (!isValidPhone) return;
 
     try {
-      const response = await fetch("http://localhost:3002/send-otp", {
+      const response = await fetch("https://stockflow-3oo6.onrender.com/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone }),
@@ -53,7 +53,8 @@ function Hero() {
 
   const handleVerifyOtp = async () => {
     try {
-      const response = await fetch("http://localhost:3002/verify-otp", {
+      
+      const response = await fetch("https://stockflow-3oo6.onrender.com/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone, otp }),
@@ -69,7 +70,9 @@ if (data.success) {
 
   console.log("NAVIGATING TO HOME");
 
- window.location.href = `http://localhost:3001?phone=${phone}`;
+console.log("DASHBOARD URL:", process.env.REACT_APP_DASHBOARD_URL);
+
+ window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}?phone=${phone}`;
 }
        else {
         alert("Invalid OTP");

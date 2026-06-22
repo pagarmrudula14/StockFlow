@@ -152,7 +152,7 @@ const Menu = () => {
                 className="dropdown-item danger"
                 onClick={() => {
                   localStorage.clear();
-                  window.location.href = "http://localhost:3001/";
+                  window.location.href = process.env.REACT_APP_FRONTEND_URL;
                 }}
               >
                 🚪 Logout
